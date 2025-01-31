@@ -5,7 +5,7 @@ import { clerkMiddleware, requireAuth } from "@clerk/express";
 import { createClerkClient } from "@clerk/backend";
 
 // Load the backend environment file
-dotenv.config({ path: "backend/.env.server" });
+dotenv.config({ path: ".env.server" });
 
 const app = express();
 const PORT = process.env.PORT || 3000;
